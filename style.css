@@ -565,6 +565,9 @@ button:hover {
   object-fit: cover;
   border-radius: 20px;
   display: block;
+  background: #000;
+  visibility: visible;
+  opacity: 1;
 }
 
 .video-item.active {
@@ -577,12 +580,16 @@ button:hover {
   opacity: 0.7;
   transform: translateX(-280px) scale(0.9) rotateY(25deg);
   z-index: 2;
+  filter: brightness(0.7);
+  pointer-events: none;
 }
 
 .video-item.next {
   opacity: 0.7;
   transform: translateX(280px) scale(0.9) rotateY(-25deg);
   z-index: 2;
+  filter: brightness(0.7);
+  pointer-events: none;
 }
 
 .video-caption {

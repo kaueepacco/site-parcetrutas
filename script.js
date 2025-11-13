@@ -193,6 +193,22 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   updateCarousel();
+
+  document.querySelectorAll('.video-item video').forEach(video => {
+  // Força o navegador a renderizar o frame inicial sem precisar clicar
+  video.addEventListener('loadeddata', () => {
+    video.style.opacity = '1';
+    video.style.visibility = 'visible';
+  });
+
+  // Caso o vídeo não tenha poster, força o preload do primeiro frame
+  if (video.readyState >= 2) {
+    video.style.opacity = '1';
+    video.style.visibility = 'visible';
+  } else {
+    video.load();
+  }
+});
 });
 
 

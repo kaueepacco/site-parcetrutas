@@ -478,7 +478,7 @@ button:hover {
 
 .gallery-controls {
   position: absolute;
-  top: 50%;
+  top: 105%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -520,7 +520,7 @@ button:hover {
 .h2-galeria {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: #ffd700;
   margin-top: 30px;
 }
@@ -595,7 +595,7 @@ button:hover {
 
 .video-controls {
   position: absolute;
-  top: 50%;
+  top: 105%;
   width: 100%;
   display: flex;
   justify-content: space-between;

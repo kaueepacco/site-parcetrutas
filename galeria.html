@@ -21,61 +21,47 @@
       <span></span>
       <span></span>
     </div>
-  </header>
+  </header><br><br><br><br>
 <!-- ===== GALERIA ===== -->
-  <section class="galeria">
-    <h2>Galeria de Fotos</h2>
-    <div class="grid-galeria">
-      <img src="inc/images/foto8.jpeg">
-      <img src="inc/images/foto7.jpeg">
-      <img src="inc/images/foto6.jpeg">
-      <img src="inc/images/foto1.jpeg">
-      <img src="inc/images/foto2.jpeg">
-      <img src="inc/images/foto3.jpeg">
-      <img src="inc/images/foto4.jpeg">
-      <img src="inc/images/foto5.jpeg">
-    </div>
-  </section>
 
-  <!-- ===== MODAL ===== -->
-  <div class="modal" id="modal">
-    <span id="fechar">&times;</span>
-    <img id="imgModal" src="" alt="Foto ampliada">
+<h2 class="h2-galeria">Galeria de Fotos</h2>
+<section class="gallery-carousel">
+  <div class="gallery-track">
+    <div class="gallery-item active">
+      <img src="inc/images/foto1.jpeg" alt="Foto 1">
+    </div>
+    <div class="gallery-item">
+      <img src="inc/images/foto2.jpeg" alt="Foto 2">
+    </div>
+    <div class="gallery-item">
+      <img src="inc/images/foto3.jpeg" alt="Foto 3">
+    </div>
   </div>
 
-  <script>
-    // Menu hamburguer
-    const menuToggle = document.getElementById("menuToggle");
-    const menu = document.getElementById("menu");
+  <div class="gallery-controls">
+    <span class="gallery-prev">❮</span>
+    <span class="gallery-next">❯</span>
+  </div>
+</section><br><br>
+<h2 class="h2-galeria">Galeria de Vídeos</h2>
+<section class="video-carousel">
+  <div class="video-track">
+    <div class="video-item active">
+      <video src="inc/videos/video1.mp4" controls></video>
+    </div>
+    <div class="video-item">
+      <video src="inc/videos/video2.mp4" controls></video>
+    </div>
+    <div class="video-item">
+      <video src="inc/videos/video3.mp4" controls></video>
+    </div>
+  </div>
 
-    menuToggle.addEventListener("click", () => {
-      menu.classList.toggle("ativo");
-    });
-
-    // ===== MODAL =====
-    const imagens = document.querySelectorAll(".grid-galeria img");
-    const modal = document.getElementById("modal");
-    const modalImg = document.getElementById("imgModal");
-    const fechar = document.getElementById("fechar");
-
-    imagens.forEach(img => {
-      img.addEventListener("click", () => {
-        modal.style.display = "flex";
-        modalImg.src = img.src;
-        modalImg.alt = img.alt;
-      });
-    });
-
-    fechar.addEventListener("click", () => {
-      modal.style.display = "none";
-    });
-
-    modal.addEventListener("click", (e) => {
-      if (e.target === modal) modal.style.display = "none";
-    });
-  </script>
-</body>
-</html>
+  <div class="video-controls">
+    <span class="video-prev">❮</span>
+    <span class="video-next">❯</span>
+  </div>
+</section>
   
   <script src="script.js"></script>
   </body>

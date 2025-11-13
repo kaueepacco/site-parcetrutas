@@ -510,11 +510,11 @@ button:hover {
   }
 
   .gallery-item.prev {
-    transform: translateX(-180px) scale(0.9) rotateY(20deg);
+    transform: translateX(-77px) scale(0.9) rotateY(20deg);
   }
 
   .gallery-item.next {
-    transform: translateX(180px) scale(0.9) rotateY(-20deg);
+    transform: translateX(77px) scale(0.9) rotateY(-20deg);
   }
 }
 .h2-galeria {
@@ -627,11 +627,11 @@ button:hover {
   }
 
   .video-item.prev {
-    transform: translateX(-180px) scale(0.9) rotateY(20deg);
+    transform: translateX(-77px) scale(0.9) rotateY(20deg);
   }
 
   .video-item.next {
-    transform: translateX(180px) scale(0.9) rotateY(-20deg);
+    transform: translateX(77px) scale(0.9) rotateY(-20deg);
   }
 }
 
